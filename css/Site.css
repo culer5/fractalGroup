@@ -1,0 +1,103 @@
+/*
+    Jordan Duke : Fractals Example
+    http://prism.troy.edu/jduke162488/GroupProject/Site.css
+*/
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+canvas {
+    position: center;
+    cursor: zoom-in;
+    max-width: inherit;
+    text-align: center;
+}
+
+#NavBar {
+    /*top: 0;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;*/
+    background-color: black;
+    text-align: center;
+}
+
+/*#NavBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#NavBar a:hover,
+a:active {
+    color: black;
+    background-color: orange;
+}
+
+#NavBar a.Active {
+    color: white;
+    background-color: #4CAF50;
+}
+*/
+
+#Header {
+    padding-top: 2%;
+    text-align: justify;
+    position: static;
+}
+
+#Header p {
+    padding-left: 0%;
+
+}
+
+/*
+#Content {
+    width: 50%;
+    margin: auto;
+}
+*/
+
+#Content {
+    max-height: 60%;
+    max-width: 100%;
+    /*    text-align: center;*/
+}
+
+#Footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+}
+
+#Footer li {
+    display: inline;
+}
+
+#Footer a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#Footer a:hover,
+a:active {
+    color: black;
+    background-color: orange;
+}
+
+#Footer a:visited {
+    color: white;
+}

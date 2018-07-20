@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fractal - Mandelbrot Set</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Site.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/d3.v3.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/fractal.js"></script>
+    <script src="js/methods.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+                <a class="navbar-brand" href="#">Group 2</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Home</a></li>
+                    <li> <a href="Julia_Set.html" class="Active">Julia Set</a></li>
+                    <li><a href="Mandelbrot.html">Mandelbrot Set</a></li>
+                    <li> <a href="Tricorn.html">Tricorn</a></li>
+                    <li><a href="BurningShip.html">Burning Ship</a></li>
+                    <li><a href="Newton.html">Newton's Method</a></li>
+                    <li><a href="Siegel.html">Siegel Disk</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- /.container-fluid -->
+        <h2>Mandelbrot Set:</h2>
+        <p>A set of points in the complex plane that is self-replicating according to some predetermined rule such that the boundary of the set has fractal dimensions, used in the study of fractal geometry and in producing patterns in computer graphics.</p>
+        <p>
+            <font size="4"><b>**Place the cursor below the image and use the mouse wheel to zoom into the image**</b></font>
+        </p>
+        <div id="Content">
+            <canvas id="aCanvas"></canvas>
+            <canvas id="bCanvas">
+               Your browser does not support HTML5 Canvas.
+            </canvas>
+            <noscript>
+               Your browser does not support JavaScript.
+            </noscript>
+        </div>
+    </div>
+    <div id="Footer" class="footer">
+        <ul>
+            <li><a href="Julia_Set.html">&larr;Previous</a></li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Tricorn.html">Next&rarr;</a></li>
+        </ul>
+    </div>
+    <script src="js/navigation.js"></script>
+    <script>
+        //maxIter = 1000;
+        setTimeout(function() {
+            changeMethod(jul._menuItems.mandelbrotItems.main);
+        }, 1);
+
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

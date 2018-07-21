@@ -8,7 +8,8 @@ body {
     font-size: 16px;
     background-color: lightgray;
     text-align: center;
-}
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} /*Added Font Family */
 
 canvas {
     position: center;
